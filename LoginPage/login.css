@@ -24,6 +24,24 @@
     text-align: center;
 }
 
+.separate {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.separate hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #e5e7eb;
+}
+
+.separate span {
+    color: #6b7280;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
 .input_box.error input {
     border-color: #ff0000;
 }
