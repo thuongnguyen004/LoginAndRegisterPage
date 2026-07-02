@@ -1,0 +1,46 @@
+.form_item.btn.btn_signup_box {
+    display: flex;
+    gap: 10px;
+
+}
+
+.form_item.btn.btn_signup_box img {
+    width: 30px;
+    height: 30px;
+}
+
+.form_item.btn.btn_signup_box .btn_gg,
+.btn_git {
+    background-color: white;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    border-color: #E5E7EB;
+    border-radius: 10px;
+    border-style: double;
+}
+
+.form_item.sign_in {
+    text-align: center;
+}
+
+.form_item.btn .btn_signup {
+    width: 300px;
+    height: 25px;
+    background-color: #5046E5;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.input_box.error input {
+    border-color: #ff0000;
+}
+
+.input_box.success input {
+    border-color: #008000c8;
+}
+
+.input_box .error {
+    color: #ff0000;
+}
