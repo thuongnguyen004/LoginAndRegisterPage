@@ -1,15 +1,15 @@
-.form_item.btn.btn_signin_box {
+.btn_signin_box {
     display: flex;
     gap: 10px;
 
 }
 
-.form_item.btn.btn_signin_box img {
+.btn_signin_box img {
     width: 30px;
     height: 30px;
 }
 
-.form_item.btn.btn_signin_box .btn_gg,
+.btn_gg,
 .btn_git {
     background-color: white;
     padding: 10px;

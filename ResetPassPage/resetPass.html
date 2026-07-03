@@ -1,76 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reset Password</title>
-    <script src="https://kit.fontawesome.com/30e49b2023.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../src/style.css">
-    <link rel="stylesheet" href="./resetPass.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reset Password</title>
+  <script src="https://kit.fontawesome.com/30e49b2023.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../assets/style.css" />
+  <link rel="stylesheet" href="../assets/common.css" />
+  <link rel="stylesheet" href="./resetPass.css" />
 </head>
 
 <body>
-    <header>
-        <ul>
-            <li> <a href="">1. Login</a></li>
-            <li> <a href="">2. Register</a></li>
-            <li><a href="">3. Forgot password</a></li>
-            <li><a href="">4. Reset password</a></li>
-            <li><a href="">5. Success</a></li>
-        </ul>
-    </header>
-    <main>
-        <div class="main_content">
-            <div class="content_left">
-                <div class="logo">
-                    <img src="../src/img/northwind.png" alt="Northwind">
-                    <h3>Northwind</h3>
-                </div>
-                <div class="circle big"></div>
-                <div class="circle small"></div>
-                <div class="intro">
-                    <h2>One account for everything your team ships.</h2>
-                    <p>Secure sign-in, instant onboarding, and a verified inbox — all in a few clicks.</p>
+  <header>
+    <div id="toggle">
+      <i class="fa-solid fa-bars" style="color: #5046e5;"></i>
+    </div>
+    <div id="main_menu">
+      <ul>
+        <li><a href="../LoginPage/login.html">1. Login</a></li>
+        <li><a href="../RegisterPage/register.html">2. Register</a></li>
+        <li><a href="../ForgotPassPage/forgotPass.html">3. Forgot password</a></li>
+        <li><a href="../ResetPassPage/resetPass.html">4. Reset password</a></li>
+        <li><a href="../SuccessPage/Success.html">5. Success</a></li>
+      </ul>
+    </div>
 
-                    <ul>
-                        <li><i class="fa-regular fa-circle-check" style="color: rgb(255, 255, 255, 0.6);"></i> Encrypted
-                            credentials</li>
-                        <li><i class="fa-regular fa-circle-check" style="color: rgb(255, 255, 255, 0.6);"></i> Email
-                            verification
-                            built-in</li>
-                        <li><i class="fa-regular fa-circle-check" style="color: rgb(255, 255, 255, 0.6);"></i> Password
-                            recovery flow
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="content_right">
-                <form class="form_content">
-                    <img src="../src/img/reset.png" alt="">
-                    <h2>Set a new password</h2>
-                    <p>Choose a strong password you haven't used before. It must be at least 8 characters.</p>
-                    <div class="form_item box">
-                        <label for="pwd">New password:</label><br>
-                        <input type="password" id="pwd" name="pwd">
-                    </div>
-                    <div class="form_item box">
-                        <label for="pwd">Confirm new password:</label><br>
-                        <input type="password" id="pwd" name="pwd">
-                    </div>
-                    <div class="form_item">
-                        <button type="button">Update password</button>
-                    </div>
-                    <div class="form_item btn btn_back">
-                        <a href=""> <i class="fa-solid fa-arrow-left" style="color: #5046e5;"></i>Back to sign in</a>
-                    </div>
-                </form>
-
-            </div>
+  </header>
+  <main>
+    <div class="main_content">
+      <div class="content_left">
+        <div class="logo">
+          <img src="../assets/img/northwind.png" alt="Northwind" />
+          <h3>Northwind</h3>
         </div>
-    </main>
+        <div class="circle big"></div>
+        <div class="circle small"></div>
+        <div class="intro">
+          <h2>One account for everything your team ships.</h2>
+          <p>
+            Secure sign-in, instant onboarding, and a verified inbox — all in
+            a few clicks.
+          </p>
 
+        </div>
+        <div>
+          <ul>
+            <li>
+              <i class="fa-regular fa-circle-check" style="color: rgb(255, 255, 255, 0.6)"></i>
+              Encrypted credentials
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-check" style="color: rgb(255, 255, 255, 0.6)"></i>
+              Email verification built-in
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-check" style="color: rgb(255, 255, 255, 0.6)"></i>
+              Password recovery flow
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="content_right">
+        <form class="form_content">
+          <img src="../assets/img/reset.png" alt="" />
+          <h2>Set a new password</h2>
+          <p>
+            Choose a strong password you haven't used before. It must be at
+            least 8 characters.
+          </p>
+          <div class="form_item input_box">
+            <label for="pwd">New password:</label><br />
+            <input type="password" id="pwd" name="pwd" />
+          </div>
+          <div class="form_item input_box">
+            <label for="pwd">Confirm new password:</label><br />
+            <input type="password" id="pwd" name="pwd" />
+          </div>
+          <div class="form_item btn btn_submit">
+            <button type="button">Update password</button>
+          </div>
+          <div class="form_item btn btn_back">
+            <a href="">
+              <i class="fa-solid fa-arrow-left" style="color: #5046e5"></i>Back to sign in</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="../assets/js/responsive.js"></script>
 </body>
 
 </html>

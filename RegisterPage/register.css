@@ -1,16 +1,15 @@
-.form_item.btn.btn_signup_box {
+.btn_signup_box {
     display: flex;
     gap: 10px;
 
 }
 
-.form_item.btn.btn_signup_box img {
+.btn_signup_box img {
     width: 30px;
     height: 30px;
 }
 
-.form_item.btn.btn_signup_box .btn_gg,
-.btn_git {
+.btn_gg, .btn_git {
     background-color: white;
     padding: 2px;
     display: flex;
@@ -20,11 +19,15 @@
     border-style: double;
 }
 
+.form_item.terms {
+    text-align: center;
+}
+
 .form_item.sign_in {
     text-align: center;
 }
 
-.form_item.btn .btn_signup {
+.btn_signup {
     width: 300px;
     height: 25px;
     background-color: #5046E5;

@@ -1,95 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <script src="https://kit.fontawesome.com/30e49b2023.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../src/style.css">
-    <link rel="stylesheet" href="./login.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <script src="https://kit.fontawesome.com/30e49b2023.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../assets/style.css" />
+  <link rel="stylesheet" href="../assets/common.css" />
+  <link rel="stylesheet" href="./login.css" />
 </head>
 
 <body>
-    <header>
-        <ul>
-            <li> <a href="">1. Login</a></li>
-            <li> <a href="">2. Register</a></li>
-            <li><a href="">3. Forgot password</a></li>
-            <li><a href="">4. Reset password</a></li>
-            <li><a href="">5. Success</a></li>
-        </ul>
-    </header>
-    <main>
-        <div class="main_content">
-            <div class="content_left">
-                <div class="logo">
-                    <img src="../src/img/northwind.png" alt="Northwind">
-                    <h3>Northwind</h3>
-                </div>
-                <div class="circle big"></div>
-                <div class="circle small"></div>
-                <div class="intro">
-                    <h2>One account for everything your team ships.</h2>
-                    <p>Secure sign-in, instant onboarding, and a verified inbox — all in a few clicks.</p>
+  <header>
+    <div id="toggle">
+      <i class="fa-solid fa-bars" style="color: #5046e5;"></i>
+    </div>
+    <div id="main_menu">
+      <ul>
+        <li><a href="../LoginPage/login.html">1. Login</a></li>
+        <li><a href="../RegisterPage/register.html">2. Register</a></li>
+        <li><a href="../ForgotPassPage/forgotPass.html">3. Forgot password</a></li>
+        <li><a href="../ResetPassPage/resetPass.html">4. Reset password</a></li>
+        <li><a href="../SuccessPage/Success.html">5. Success</a></li>
+      </ul>
+    </div>
 
-                    <ul>
-                        <li><i class="fa-regular fa-circle-check" style="color: rgb(255, 255, 255, 0.6);"></i> Encrypted
-                            credentials</li>
-                        <li><i class="fa-regular fa-circle-check" style="color: rgb(255, 255, 255, 0.6);"></i> Email
-                            verification
-                            built-in</li>
-                        <li><i class="fa-regular fa-circle-check" style="color: rgb(255, 255, 255, 0.6);"></i> Password
-                            recovery flow
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="content_right">
-                <form class="form_content" id="form">
-                    <h2>Welcome back</h2>
-                    <p>Sign in to continue to your workspace.</p>
-                    <div class="form_item btn btn_signin_box">
-                        <button class="btn_gg" type="button"><img src="../src/img/gg.png" alt="">Continue with
-                            Google</button>
-                        <button class="btn_git" type="button"><img src="../src/img/git.png" alt="">Continue with
-                            Github</button>
-                    </div>
-                    <div class="form_item separate">
-                        <hr>
-                        <span>or sign in with email</span>
-                        <hr>
-                    </div>
-                    <div class="form_item input_box">
-                        <label for="email">Email:</label><br>
-                        <input type="text" id="email" name="email" placeholder="Enter your email">
-                        <div class="error"></div>
-                    </div>
-                    <div class="form_item input_box">
-                        <label for="password">Password:</label><br>
-                        <input type="password" id="password" name="password" placeholder="Enter your password">
-                        <div class="error"></div>
-                    </div>
-                    <div class="form_item checkbox">
-                        <div>
-                            <input type="checkbox" id="" name="" value="">
-                            <label for="">Remember me</label>
-                        </div>
-                        <a href="">Forgot password?</a>
-                    </div>
-                    <div class="form_item btn">
-                        <button class="btn_signin" type="submit">Sign in</button>
-                    </div>
-                    <div class="form_item sign_up">
-                        <p>Don't have an account?<a href="">Sign up</a> </p>
-                    </div>
-                </form>
-
-            </div>
+  </header>
+  <main>
+    <div class="main_content">
+      <div class="content_left">
+        <div class="logo">
+          <img src="../assets/img/northwind.png" alt="Northwind" />
+          <h3>Northwind</h3>
         </div>
-    </main>
-    <script src="../src/js/login.js"></script>
+        <div class="circle big"></div>
+        <div class="circle small"></div>
+        <div class="intro">
+          <h2>One account for everything your team ships.</h2>
+          <p>
+            Secure sign-in, instant onboarding, and a verified inbox — all in
+            a few clicks.
+          </p>
+
+        </div>
+        <div>
+          <ul>
+            <li>
+              <i class="fa-regular fa-circle-check" style="color: rgb(255, 255, 255, 0.6)"></i>
+              Encrypted credentials
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-check" style="color: rgb(255, 255, 255, 0.6)"></i>
+              Email verification built-in
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-check" style="color: rgb(255, 255, 255, 0.6)"></i>
+              Password recovery flow
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="content_right">
+        <form class="form_content" id="form">
+          <h2>Welcome back</h2>
+          <p>Sign in to continue to your workspace.</p>
+          <div class="form_item btn btn_signin_box">
+            <button class="btn_gg" type="button">
+              <img src="../assets/img/gg.png" alt="" />Continue with Google
+            </button>
+            <button class="btn_git" type="button">
+              <img src="../assets/img/git.png" alt="" />Continue with Github
+            </button>
+          </div>
+          <div class="form_item separate">
+            <hr />
+            <span>or sign in with email</span>
+            <hr />
+          </div>
+          <div class="form_item input_box">
+            <label for="email">Email:</label><br />
+            <input type="text" id="email" name="email" placeholder="Enter your email" />
+            <div class="error"></div>
+          </div>
+          <div class="form_item input_box">
+            <label for="password">Password:</label><br />
+            <input type="password" id="password" name="password" placeholder="Enter your password" />
+            <div class="error"></div>
+          </div>
+          <div class="form_item checkbox">
+            <div>
+              <input type="checkbox" id="" name="" value="" />
+              <label for="">Remember me</label>
+            </div>
+            <a href="">Forgot password?</a>
+          </div>
+          <div class="form_item btn btn_submit">
+            <button type="submit">Sign in</button>
+          </div>
+          <div class="form_item sign_up">
+            <p>
+              Don't have an account?<a href="../RegisterPage/register.html">Sign up</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="./login.js"></script>
+  <script type="module" src="../assets/js/responsive.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,5 @@
+import { setError, isValidEmail, setSuccess } from "../assets/js/helpers.js";
+
 const form = document.getElementById('form');
 const fullName = document.getElementById('name')
 const email = document.getElementById('email')
@@ -12,27 +14,7 @@ form.addEventListener('submit', e => {
         window.location.href = "../LoginPage/login.html";
     }
 });
-const setError = (element, message) => {
-    const inputBox = element.parentElement;
-    const errorDisplay = inputBox.querySelector('.error');
-    errorDisplay.innerText = message;
-    inputBox.classList.add('error');
-    inputBox.classList.remove('success')
 
-}
-const setSuccess = element => {
-    const inputBox = element.parentElement;
-    const errorDisplay = inputBox.querySelector('.error');
-    errorDisplay.innerText = '';
-    inputBox.classList.remove('error');
-
-}
-
-const isValidEmail = email => {
-    const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    return re.test(String(email).toLowerCase());
-
-}
 const validateInputs = () => {
     const fullNameValue = fullName.value.trim();
     const emailValue = email.value.trim();
