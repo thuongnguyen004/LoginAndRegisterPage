@@ -1,4 +1,4 @@
-import { setError, isValidEmail, setSuccess } from "../assets/js/helpers.js";
+import { setError, isValidEmail, setSuccess } from "../../assets/js/helpers.js";
 
 const form = document.getElementById('form');
 const email = document.getElementById('email')

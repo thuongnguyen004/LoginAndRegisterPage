@@ -1,6 +1,10 @@
-const toggle = document.getElementById("toggle");
-const menu = document.getElementById("main_menu");
+export function initMenu() {
+    const toggle = document.getElementById("toggle");
+    const menu = document.getElementById("main_menu");
 
-toggle.addEventListener("click", () => {
-    menu.classList.toggle("active");
-});
+    if (!toggle || !menu) return;
+
+    toggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+    });
+}

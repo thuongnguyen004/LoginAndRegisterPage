@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forgot Password</title>
+  <script src="https://kit.fontawesome.com/30e49b2023.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../../assets/style.css" />
+  <link rel="stylesheet" href="../../assets/common.css" />
+  <link rel="stylesheet" href="../../components/Header/header.css" />
+  <link rel="stylesheet" href="../../components/ContentLeft/contentLeft.css" />
+  <link rel="stylesheet" href="./forgotPass.css" />
+</head>
+
+<body>
+  <div data-include="../../components/Header/header.html"></div>
+  <main>
+    <div class="main_content">
+      <div class="content_left" data-include="../../components/ContentLeft/contentLeft.html"></div>
+      <div class="content_right">
+        <form class="form_content">
+          <img src="../../assets/img/fg.png" alt="" />
+          <h2>Forgot password?</h2>
+          <p>
+            No problem. Enter the email tied to your account and we'll send
+            you a reset link.
+          </p>
+          <div class="form_item input_box">
+            <label for="email">Email:</label><br />
+            <input type="text" id="email" name="email" />
+          </div>
+          <div class="form_item btn btn_submit">
+            <button type="button">Send reset link</button>
+          </div>
+          <div class="form_item btn btn_back">
+            <a href="">
+              <i class="fa-solid fa-arrow-left" style="color: #5046e5"></i>Back to sign in</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="../../assets/js/responsive.js"></script>
+  <script type="module" src="../../assets/js/responsive.js"></script>
+  <script type="module" src="../../assets/js/include.js"></script>
+</body>
+
+</html>

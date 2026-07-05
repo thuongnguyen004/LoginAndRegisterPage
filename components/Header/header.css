@@ -1,0 +1,24 @@
+#main_menu ul {
+    display: flex;
+}
+
+#main_menu li {
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main_menu li a {
+    text-decoration: none;
+    color: #6B7280;
+    padding: 10px 10px;
+
+}
+
+#main_menu li :hover {
+    background-color: #5046E5;
+    color: white;
+    border-radius: 20px;
+}
