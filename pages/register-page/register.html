@@ -8,20 +8,23 @@
   <script src="https://kit.fontawesome.com/30e49b2023.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../../assets/style.css" />
   <link rel="stylesheet" href="../../assets/common.css" />
-  <link rel="stylesheet" href="../../components/Header/header.css" />
-  <link rel="stylesheet" href="../../components/ContentLeft/contentLeft.css" />
+  <link rel="stylesheet" href="../../components/header/header.css" />
+  <link rel="stylesheet" href="../../components/content-left/content-left.css" />
   <link rel="stylesheet" href="./register.css" />
 </head>
 
 <body>
-  <div data-include="../../components/Header/header.html"></div>
+  <div data-include="../../components/header/header.html"></div>
   <main>
     <div class="main_content">
-      <div class="content_left" data-include="../../components/ContentLeft/contentLeft.html"></div>
+      <div class="content_left" data-include="../../components/content-left/content-left.html"></div>
+
       <div class="content_right">
         <form class="form_content" id="form">
           <h2>Create your account</h2>
+
           <p>Start your 14-day free trial. No card required.</p>
+
           <div class="form_item btn btn_signup_box">
             <button class="btn_gg" type="button">
               <img src="../../assets/img/gg.png" alt="" />Continue with Google
@@ -30,6 +33,7 @@
               <img src="../../assets/img/git.png" alt="" />Continue with Github
             </button>
           </div>
+
           <div class="form_item separate">
             <hr />
             <span>or</span>
@@ -41,36 +45,43 @@
             <input type="text" id="name" name="name" placeholder="Enter your name" />
             <div class="error"></div>
           </div>
+
           <div class="form_item input_box">
             <label for="email">Email:</label><br />
             <input type="text" id="email" name="email" placeholder="Enter your email" />
             <div class="error"></div>
           </div>
+
           <div class="form_item input_box">
             <label for="password">Password:</label><br />
             <input type="password" id="password" name="password" placeholder="Enter your password" />
             <div class="error"></div>
           </div>
+
           <div class="form_item input_box">
             <label for="password">Confirm Password:</label><br />
             <input type="password" id="confirm_password" name="confirm_password"
               placeholder="Enter your confirm password" />
             <div class="error"></div>
           </div>
+
           <div class="form_item terms">
             <p>
               I agree to the <a href="">Terms of Service</a> and
               <a href="">Privacy Policy</a>
             </p>
           </div>
+
           <div class="form_item btn btn_submit">
             <button type="submit">Sign up</button>
           </div>
+
           <div class="form_item sign_in">
             <p>
               Already have an account?<a href="../LoginPage/login.html">Sign in</a>
             </p>
           </div>
+
         </form>
       </div>
     </div>
